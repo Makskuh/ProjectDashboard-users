@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const User = require('./User')
 const { USER_LOGIN,USER_PASSWORD,DB_HOST, DB_NAME } = require('../constants');
 
 
