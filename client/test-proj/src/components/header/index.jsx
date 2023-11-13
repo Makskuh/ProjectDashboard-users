@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './Header.module.sass';
+
 
 function Header(props) {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <ul className={styles.headerUl}>
+          <li className={styles.headerLi}>
+            <Link to="/" className={styles.headerLink}>Home</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/login" className={styles.headerLink}>Login</Link>
           </li>
           <li>
-            <Link to="/registration">Registration</Link>
+            <Link to="/registration" className={styles.headerLink}>Registration</Link>
           </li>
         </ul>
       </nav>
