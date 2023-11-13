@@ -7,7 +7,9 @@ const CONSTANTS = {
   DB_HOST: process.env.DB_HOST || 'mongotest.aweennl.mongodb.net',
   USER_LOGIN: process.env.USER_LOGIN || 'admin',
   USER_PASSWORD: process.env.USER_PASSWORD || 'admin',
-  DB_NAME: process.env.DB_NAME || 'testDB'
+  DB_NAME: process.env.DB_NAME || 'testDB',
+  ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET,
+  ACCESS_TOKEN_EXPIRES_IN: process.env.ACCESS_TOKEN_EXPIRES_IN,
 }
 
 module.exports = CONSTANTS;
