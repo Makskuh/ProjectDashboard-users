@@ -24,6 +24,7 @@ const userSchema = new Schema(
     },
     password: { type: String, required: true },
     isMale: { type: Boolean, default: true },
+    projects: [{ type: Schema.Types.ObjectId, ref: 'Project' }],
   },
   { timestamps: true }
 );
